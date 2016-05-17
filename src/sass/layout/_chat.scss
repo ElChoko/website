@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,400);
+
+.menu-button-bottom{
+    .menu-button-bottom-title{
+        h3{
+            color: #fff;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 17px; 
+            display: inline-block;
+            float: left;
+            margin-top: 4px;
+            margin-left: 5px;
+        }
+        img{
+            float: left;
+            height: 22px;
+            width: 22px;
+            display: inline-block;
+        }
+        margin: 1px 8px 0 8px;
+    }
+    height: 30px;
+    width: 300px;
+    border-radius: 7px 7px 0px 0px;
+    border: 1px solid grey;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    -webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+    background-color: rgba(64, 74, 88, 1);
+    cursor: pointer;
+    .menu-button-bottom-notification{
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        border: 1px solid grey;
+        background-color: #f03030;
+        display: inline-block;
+        float: right;
+        p{
+            font-family: 'Source Sans Pro', sans-serif;
+            color: #fff;
+            font-size: 15px;
+            text-align: center;
+            margin-top: 3px;
+        }
+    }
+}
+.menu-button-bottom:hover{
+    background-color: rgb(64, 100, 116);
+    -webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.menu-button-bottom.button-move{
+    bottom: 350px;
+    -webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;  
+}
+
+.message-chat-content{
+    width: 92%;
+    margin: 0 auto;
+}
+
+.message-chat-view{
+    width: 100%;
+    background-color: rgb(46, 50, 57);
+    height: 280px;
+}
+.message-chat-send{
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgb(46, 50, 57);
+    height: 50px; 
+
+    message-chat-textarea{
+        width: 300px;
+        height: 50px;
+        color: rgba(255,255,255, 0.5);
+        font-family: 'Source Sans Pro', sans-serif;
+        font-style: italic;
+        display: inline-block;
+    }
+}

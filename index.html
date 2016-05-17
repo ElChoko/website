@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Legacy DESIGN</title>
+        <link rel="stylesheet" href="src/stylesheets/app.css">
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        
+        <!-- SCRIPT A CHARGER -->
+        <script src="src/js/jquery-1.12.3.min.js"></script>
+    </head>
+
+    <body>
+        <div class="col-s-12">
+            <div class="menu" id="menu">
+                <div class="menu-content">
+                <a><img src="src/img/logo.png" class=""></a>
+                <nav class="menu-nav">
+                    <ul>
+                        <li><a href="">Accueil</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Forum</a></li>
+                        <li><a href="">Cours</a></li>
+                        <li><a href="">Galerie</a></li>
+                        <li><a href="">Ressources</a></li>
+                        <li><a href="">Concours</a></li>
+                        <li><a href="">Boutique</a></li>
+                        <li><a href="">Contacts</a></li>
+                        <li><a href="">L'équipe</a></li>
+                        <li><a href="">Chat</a></li>
+                    </ul>
+                </nav>
+				<a class="menu-button-left" id="showLeft"><span></span></a>
+                <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="">Accueil</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Forum</a></li>
+                        <li><a href="">Cours</a></li>
+                        <li><a href="">Galerie</a></li>
+                        <li><a href="">Ressources</a></li>
+                        <li><a href="">Concours</a></li>
+                        <li><a href="">Boutique</a></li>
+                        <li><a href="">Contacts</a></li>
+                        <li><a href="">L'équipe</a></li>
+                        <li><a href="">Chat</a></li>
+                    </ul>
+                </nav>
+				<a class="menu-button-right" id="showRight"></a>
+                <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+                    <h3>Profil</h3>
+                    <ul>
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </div>
+				<a class="menu-button-bottom" id="showTop"><div class="menu-button-bottom-title"><img src="src/img/chat2.png"><h3>Chat</h3><div class="menu-button-bottom-notification"><p>+9</p></div></div></a>
+                <nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-bottom" id="cbp-spmenu-s3">
+                    <div class="message-chat-content">
+                        <div class="message-chat-view"></div>
+                        <div class="message-chat-send"><textarea class="message-chat-textarea" name="ameliorer" id="message-chat">envoyer...</textarea></div>
+                    </div>
+                </nav>
+        <div class="col-s-12">
+            <div class="banner">
+                <ul>
+                    <li style="background-image: url('src/img/1.jpg')";><div class="banner-box"></div></li>
+                    <li style="background-image: url('src/img/2.jpg')";><div class="banner-box"></div></li>
+                    <li style="background-image: url('src/img/3.jpg')";><div class="banner-box"></div></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-container" id="maincontainer"><div class="main">
+            <div class="sidebar">S</div><div class="content">C</div></div></div>
+        <div class="col-s-12"><div class="footer">Footer</div></div> 
+        <script src="src/js/unslider.js"></script>
+        <script>
+		jQuery(document).ready(function($) {
+			$('.banner').unslider({fluid: false, dots: false, arrows: true, infinite: false, key: true, fade: true, autoplay: true, animation: 'fade'});
+		});
+        </script>
+        <script src="src/js/menu-nav.js"></script>
+        <script src="src/js/classie.js"></script>
+        <script src="src/js/modernizr.custom.js"></script>
+    </body>
+</html>

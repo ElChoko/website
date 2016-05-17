@@ -1,0 +1,72 @@
+$columns: 12!default;
+$gutter: 20px!default;
+$small: 100px;
+$medium: 624px;
+$large: 1200px;
+
+%col{
+    float: left;
+    position: relative;
+    min-height: 1px;
+    //padding: 0 $gutter * 0.5;
+    background-color: rgba(#ff3b3b, 0.2);
+    border: 1px solid rgba(#000, 0.5);
+}
+
+%clearfix{
+    &:before,
+    &:after{
+        content:"";
+        display: table;
+    }
+    &:after{
+        clear:both;
+    }
+    &{
+        zoom:1;
+    }
+}
+.row{
+    margin:0 $gutter * -0.5;
+    @extend %clearfix;
+}
+    
+    @for $i from 1 through $columns{
+        .col-#{$i}{ 
+            @extend %col;
+            width:$i / $columns * 100%; 
+    }
+    .col-s-#{$i}, .col-m-#{$i}, .col-l-#{$i}{ @extend %col;}
+} 
+
+@media only screen and (min-width: $small){
+    @for $i from 1 through $columns{
+        .col-s-#{$i}{ 
+            width:$i / $columns * 100%; 
+    }
+} 
+    .s-hide{display: none;}
+}
+
+@media only screen and (min-width: $medium){
+    .col-m-center{ margin: 0 auto; float: none;}
+    @for $i from 1 through $columns{
+        .col-m-#{$i}{ 
+            width:$i / $columns * 100%; 
+    }
+} 
+    .m-hide{display: none;}
+    .m-show{display: block;}
+    .s-show{display: none;}
+}
+
+@media only screen and (min-width: $large){
+    @for $i from 1 through $columns{
+        .col-l-#{$i}{ 
+            width:$i / $columns * 100%; 
+    }
+} 
+    .l-hide{display: none;}
+    .l-show{display: block;}
+    .m-show{display: none;}
+}

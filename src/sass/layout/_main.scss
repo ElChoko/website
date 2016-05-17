@@ -1,0 +1,84 @@
+@import "../tools/variable";
+
+/* ========================
+   Layout/Main
+   ======================= */
+
+//Pour améliorer et que la valeur du width de la sidebar et du content ne bougent pas il faut que la largeur du dashboard soit en pourcentage
+
+@media only screen and (min-width: $small){
+.main{
+    width: 100%;
+    transition-duration: $transition-duration-header;
+}
+.main-container{
+    width: 100%;
+    transition-duration: $transition-duration-header;
+}
+.sidebar,.content{
+    margin-top: 10px;
+    background-color: #fff;
+    display: inline-block;
+}
+    
+.sidebar{
+    width: 100%;
+    height: 200px;
+}
+
+.content{
+    width: 100%;
+    height: 1000px;
+}
+    
+.main{
+    top: 60px;
+    position: relative;
+    display: block;
+    width: calc(100% - 8px);
+    margin: 0 auto;
+    transition-duration: $transition-duration-header;
+}
+}
+
+@media only screen and (min-width: $medium){
+.main{
+    top: 0;
+}
+.sidebar,.content{
+    margin-top: 20px;
+}
+.main-container.cbp-spmenu-open{
+    width: calc(100% - 300px);
+    float: left;
+    transition-duration: $transition-duration-header;
+}
+}
+@media only screen and (min-width: $large){
+
+
+.sidebar{
+    height: 1000px;
+    width: calc(25% - 4px);
+    margin-right: 4px;
+}
+
+.content{
+    width: calc(75% - 4px);
+    margin-left: 4px;
+}
+}
+
+@media only screen and (min-width: $large) and (max-width: 1500px){
+.main {
+    min-width: $large;
+    max-width: 80%;
+    transition-duration: $transition-duration-header;
+} 
+}
+@media only screen and (min-width: 1501px){
+    .main{
+        max-width: 80%;
+        transition-duration: $transition-duration-header;
+    }
+}
